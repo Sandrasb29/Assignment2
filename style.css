@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #FFFFFF;
+}
+
+section {
+  border: 1px #000000 solid;
+  width: 33.33%;
+  float: left;
+  position: relative;
+  
+
+  padding: 10px;
+  padding-top: 20px;
+  color: #FFFFFF;
+  background-color: #808080;
+}
+
+.container {
+  gap: 15px;
+  margin: 15px;
+  flex: 15;
+}
+p {
+  text-align: center;
+  margin: 5%;
+  padding: 3px;
+
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+section > span {
+  background-color: #AFB8C1;
+
+}
+
+span p.title {
+  font-weight: bold;
+  font-family: Helvetica
+  
+}
+
+span {
+  border: 1px solid black;
+  position: absolute;
+  width: 35%;
+  height: 20%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+}
+
+/* Destop */
+/* 992px */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  section.first {
+    width: 50%;
+  }
+
+  section.second {
+    width: 50%;
+  }
+  section.third {
+    width: 100%;
+    
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+  }
+}
